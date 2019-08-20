@@ -5,25 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Silas Groskreutz Portfolio Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
-    <section>
-        Home
+    <nav role="navigation">        
+        <ul class=navlist>
+            <li><div class="js-home"><a href=home>Home</a></div></li>
+            <li><div class="js-portfolio"><a href=portfolio>Portfolio</a></div></li>
+            <li><div class="js-about"><a href=about>About</a></div></li>
+        </ul></nav>
+    <section class="home main">
+        <p>I am Silas Groskreutz and I am a full stack developer residing in the Madison, Wisconsin area. I have experience with HTML, CSS, Javascript, and JQuery. I enjoy working with technology and using it to make our lives better. I have previously worked IT roles where I was a ‘jack of all trades, master of none’ and software development was the next step I wanted to take with my career. 
+            <br><br>I am always interested in great opportunities. Please contact me via email so we may discuss them.  
+        </p>
+        <a href="mailto:silas.groskreutz@gmail.com" class="button">Email me</a>
+        <div class="js-portfolio"><a href="portfolio" class="button">View Portfolio</a></div>
     </section>
 
-    <section>
-        Portfolio
+    <section class="portfolio hide">
+        <h2>Portfolio</h2>
+        <section class=port>
+                Nintendo Name Quiz Project
+                <br>
+                <img src="quiz.png" alt="quiz screenshot">
+                <br>
+                <a href="https://sigh-less.github.io/quizapp/" class="button github">Live page</a>
+                <a href="https://github.com/sigh-less/quizapp" class="button github">To Repo</a>
+                <br>
+                This is one of my first projects built using HTML, CSS, Javascript and JQuery. I used Nintendo as inspiration because, deep down, I am a huge Nintendo fan. 
+        </section>
     </section>
 
-    <section>
-        Quiz Project
+    <section class="about hide">
+        <p>I started out in IT in a level one help desk position and grew my career to a senior junior administrator / senior helpdesk technician through a desire to never stop learning. I also worked for a couple managed service providers where I served various SMB clients creating technical solutions for them.
+            <br><br>
+            My other interests include general fitness and playing video games. I also like taking my dogs for a walk (though due to their combined size, it feels like they take me for a walk). If want to know more about me, feel free to contact me. 
+        </p>
+        <a href="mailto:silas.groskreutz@gmail.com" class=button>Email me</a>
+        <a href="https://github.com/sigh-less" class="button github">Git Hub profile</a>
+        <a href="#" class="button linkedin">Linked In Profile</a>
     </section>
-
-    <section>
-        About me
-    </section>
-    
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>

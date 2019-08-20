@@ -3,18 +3,19 @@
   }
   
   body {
-    font-family: "Open Sans",
-    sans-serif; 
+    font-family: 'Work Sans', sans-serif;
     font-size: 20px;
-    color: #444;
+    color: #000000;
     text-align: center;
     line-height: 1.5;
   }
   
-  nav,
-  footer {
+  nav {
     padding: 1% 0;
-    background-color: #aaa;
+    background-color: #bdbdbd;
+    color: #008CBA;
+    font-weight: 900;
+    /* text-shadow: 1px 1px #000000; */
   }
   
   nav {
@@ -24,19 +25,127 @@
     right: 0;
     z-index: 10;
   }
-  
-  
-  
+
+  .navlist {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   header {
     padding: 12% 0;
   }
   
   section {
-    min-height: 200px;
+    margin-top: 15%;
     padding: 6% 0;
-    background-color: #bbb;
+  }
+
+  h2 {
+    text-decoration: underline;
+    letter-spacing: 2px;
   }
   
-  section:nth-child(even) {
+  /* section:nth-child(even) {
     background-color: #ddd;
+  } */
+
+  .button {
+    background-color: #00c4ff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    }
+
+    .button:hover {
+        background-color: purple;
+    }
+
+    .button.github {
+        background-color: #6cc644;
+    }
+
+    .button.linkedin {
+        background-color: #0077b5;
+    }
+
+    img {
+        height: 250px;
+        width: 350px;
+    }
+
+  .hide {
+    display: none;
+  }
+
+
+  @media screen and (min-width: 600px) {
+    nav {
+        height: 100%;
+        width: 20%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .navlist {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+      }
+    
+    .navlist>li {
+        margin-top: 5%;
+        padding-top: 5em;
+    }
+    section {
+        margin-top: 5%;
+        margin-left: 20%;
+        min-height: 100px;
+        padding: 6% 0;
+      }
+
+    .button {
+        background-color: #00c4ff;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        }
+    
+    h2 {
+        text-decoration: underline;
+        letter-spacing: 2px;
+        margin-top: -10%;
+    }
+
+    img {
+        height: 400px;
+        width: 600px;
+    }
+
+    .port {
+        margin-right: 10%;
+    }
+
+    .button:hover {
+        background-color: purple;
+    }
   }
