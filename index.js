@@ -21,3 +21,9 @@ $('.js-about').click(function (e) {
     $('.about').show();
 	/*console.log("Clicked!"); */
 });
+
+/*  
+May implement something later with picture of dogs, was not in original plans but was suggested
+$('.js-dogs').click(function (e) {
+    $('.js-dogs').toggle();
+}); */

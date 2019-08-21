@@ -3,7 +3,7 @@
   }
   
   body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-size: 20px;
     color: #000000;
     text-align: center;
@@ -70,7 +70,7 @@
     }
 
     .button:hover {
-        background-color: purple;
+        background-color: #bdbdbd;
     }
 
     .button.github {
@@ -146,6 +146,6 @@
     }
 
     .button:hover {
-        background-color: purple;
+        background-color: #bdbdbd;
     }
   }
