@@ -3,7 +3,7 @@ $('.js-home').click(function (e) {
     $('.home').show();
     $('.portfolio').hide();
     $('.contact').hide();
-	/*console.log("Clicked!"); */
+	/*console.log("Clicked!");*/
 });
 
 $('.js-portfolio').click(function (e) {
@@ -11,7 +11,7 @@ $('.js-portfolio').click(function (e) {
     $('.home').hide();
     $('.portfolio').show();
     $('.contact').hide();
-	/*console.log("Clicked!"); */
+	//console.log("Clicked!"); 
 });
 
 $('.js-about').click(function (e) {
@@ -19,5 +19,5 @@ $('.js-about').click(function (e) {
     $('.home').hide();
     $('.portfolio').hide();
     $('.contact').show();
-	/*console.log("Clicked!"); */
+	//console.log("Clicked!");
 });
